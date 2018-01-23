@@ -1,0 +1,11 @@
+#!/bin/bash
+
+FILE="/var/run/backup.lock"
+
+if [ -f $FILE ]; then
+  echo "running"
+  echo ""
+  echo "#00ff00"
+else
+  echo "stopped"
+fi

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+systemctl list-timers | grep "1-hour" | awk '{print $5}'
