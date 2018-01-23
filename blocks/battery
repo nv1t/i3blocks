@@ -12,6 +12,7 @@ if [[ "${BATTERY_STATE}" = "Charging" ]]; then
   echo "${BATTERY_POWER}% &#xf106; ${TIME_LEFT}"
   echo "${BATTERY_POWER}% &#xf106;"
   echo "#00ff00"
+  exit
 elif [[ "${BATTERY_STATE}" = "Discharging" ]]; then
   echo "${BATTERY_POWER}% &#xf107; ${TIME_LEFT}"
   echo "${BATTERY_POWER}% &#xf107;"
